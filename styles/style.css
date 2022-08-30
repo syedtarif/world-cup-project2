@@ -1,0 +1,100 @@
+/* common styles 
+------------------------- */
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.heighlited-part {
+    padding: 18px 27px;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #1b1ff9, rgb(208, 0, 255));
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+/* header part style  
+----------------------------- */
+.top-banner {
+    background-color: #021722;
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 20px 80px 50px 120px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.header-half-width img {
+    width: 110%;
+}
+
+.header-text {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/* animation part
+------------------------------ */
+.top-banner:hover {
+    box-shadow: 40px 40px 40px gray;
+    transition: box-shadow 1s linear;
+}
+
+.header-text:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+}
+
+.header-half-width img:hover {
+    transform: scale(1.2);
+    transition: transform 1s ease-in;
+}
+
+.heighlited-part:hover {
+    transform: scale(1.2);
+    transition: transform .5s ease-in;
+}
+
+/* responsive for mobile
+------------------------------ */
+@media screen and (max-width: 767px) {
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px 25px 60px;
+        width: 65%;
+        margin-top: 20px;
+    }
+
+    .header-half-width {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .heighlited-part {
+        padding: 18px 27px;
+    }
+}
