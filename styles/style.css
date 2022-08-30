@@ -44,6 +44,41 @@ p {
     font-size: 18px;
 }
 
+/* main part style
+-------------------------- */
+main {
+    width: 84%;
+    margin: auto;
+    border: 2px solid red;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.side-bar-section {
+    width: 260px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #021722;
+}
+
+.single-side-bar {
+    /* border: 2px solid red; */
+    background-color: #fff;
+    width: 220px;
+    text-align: center;
+    margin: 3% 0;
+    border-radius: 20px;
+}
+
+.single-article {
+    border: 2px solid red;
+    width: 312px;
+}
 
 /* animation part
 ------------------------------ */
